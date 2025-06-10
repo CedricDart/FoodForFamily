@@ -11,47 +11,71 @@ class RecipeListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return InkWell(
       onTap: () {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) =>
-                RecipeDetailScreen(recipe: recipe), // Pass the complete recipe object
+            builder: (context) => RecipeDetailScreen(recipe: recipe),
           ),
         );
       },
+      borderRadius: BorderRadius.circular(10.0),
       child: Card(
-        margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-        child: Padding(
-          padding: const EdgeInsets.all(10.0),
-          child: Row(
-            children: [
-              // Display the thumbnail image
-              CachedNetworkImage(
-                imageUrl: recipe.thumbnailUrl ?? '',
-                width: 80,
-                height: 80,
-                fit: BoxFit.cover,
-                placeholder: (context, url) => const SizedBox(
-                  width: 80,
-                  height: 80,
-                  child: CircularProgressIndicator(),
-                ),
-                errorWidget: (context, url, error) => const Icon(
-                  Icons.image_not_supported,
-                  size: 80,
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      recipe.name,
-                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        elevation: 4.0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0),
+        ),
+        margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(10.0),
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Display the thumbnail image
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: CachedNetworkImage(
+                    imageUrl: recipe.thumbnailUrl ?? '',
+                    width: 90,
+                    height: 90,
+                    fit: BoxFit.cover,
+                    placeholder: (context, url) => Container(
+                      width: 90,
+                      height: 90,
+                      color: Colors.grey[300],
+                      child: const Center(child: CircularProgressIndicator()),
                     ),
+                    errorWidget: (context, url, error) => Container(
+                      width: 90,
+                      height: 90,
+                      color: Colors.grey[300],
+                      child: const Icon(
+                        Icons.image_not_supported,
+                        size: 50,
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        recipe.name,
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.teal,
+                        ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      const SizedBox(height: 4),
                     if (recipe.lastMadeDate != null) // Only display if lastMadeDate is not null
                       Text(
                         'Last Made: ${DateFormat('yyyy-MM-dd').format(recipe.lastMadeDate!.toDate())}',
@@ -60,19 +84,22 @@ class RecipeListItem extends StatelessWidget {
                     if (recipe.rating != null) // Only display if rating is not null
                       Row(
                         children: [
-                          // Display star rating
-                          const Icon(
-                            Icons.star,
-                            color: Colors.amber,
-                            size: 20,
-                          ),
-                          const SizedBox(width: 5),
-                          // Add some space between the stars and the rating text
+                          ...List.generate(5, (index) {
+                            return Icon(
+                              index < recipe.rating!.floor() ? Icons.star : Icons.star_border,
+                              color: Colors.amber,
+                              size: 18,
+                            );
+                          }),
+                          const SizedBox(width: 8),
                           Text(
-                            recipe.rating!.toStringAsFixed(1), // Show rating with one decimal place
+                            recipe.rating!.toStringAsFixed(1),
                             style: const TextStyle(
-                                color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold),
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
+
                         ],
                       ),
                   ],
