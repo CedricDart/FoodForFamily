@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "1027155819081",
+    "firebase_url": "https://foodforfamily-8a8e3-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "foodforfamily-8a8e3",
+    "storage_bucket": "foodforfamily-8a8e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027155819081:android:ad7e540d33ce72ad1a5d98",
+        "android_client_info": {
+          "package_name": "com.example.food_for_family"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcDc433Lv-3xH8LRGYpEPIOBp6P7QFtTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027155819081:android:ae5e75fafc9f462d1a5d98",
+        "android_client_info": {
+          "package_name": "com.foodforfamily.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcDc433Lv-3xH8LRGYpEPIOBp6P7QFtTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027155819081:android:14cd65663a766e0c1a5d98",
+        "android_client_info": {
+          "package_name": "com.foodforfamily.fff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcDc433Lv-3xH8LRGYpEPIOBp6P7QFtTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027155819081:android:b5f5e2373ffd19b81a5d98",
+        "android_client_info": {
+          "package_name": "com.speech.speechrepo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcDc433Lv-3xH8LRGYpEPIOBp6P7QFtTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027155819081-61e1j5976lna9up0chdc5hmdeoi88l89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

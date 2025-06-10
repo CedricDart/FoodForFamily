@@ -1,0 +1,156 @@
+name: food_for_family
+description: Add Recipes
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Localization
+  intl: ^0.19.0
+
+  bottom_navy_bar: ^6.0.0
+
+  # Shared Preferences
+  shared_preferences: ^2.0.6
+  flutter_secure_storage: ^9.2.2
+
+  # Networking
+  connectivity_plus: ^6.0.5
+  http: ^0.13.4
+  queue: ^3.1.0+1
+
+  # Dependency injection
+  get_it: ^7.2.0
+
+  # Architecture
+  provider: ^6.0.3
+  stacked: ^3.4.3
+  flutter_dotenv: ^5.0.2
+  recase: ^4.0.0
+
+  # Launcher / Web
+  webview_flutter: ^4.9.0
+  url_launcher: ^6.0.20
+  flutter_inappwebview: ^6.1.0+1
+  map_launcher: ^3.5.0
+  share_plus: ^10.0.2
+
+  # UI
+  flutter_svg: ^2.0.9
+  font_awesome_flutter: ^10.1.0
+  smooth_page_indicator: ^1.0.0+2
+  scrollable_positioned_list: ^0.3.2
+  lottie: ^3.0.0
+  auto_size_text: ^3.0.0
+
+  # Auth / Permissions
+  local_auth: ^2.3.0
+  permission_handler: ^11.3.1
+  uuid: ^4.5.0
+  pointycastle: ^3.6.0
+
+  # Voice
+  speech_to_text: ^7.0.0
+
+  # Camera / Image
+  camera: ^0.11.0+2
+  image_cropper: ^4.0.1
+  flutter_image_compress: ^2.3.0
+
+  # Map / Geolocation
+  google_maps_flutter: ^2.1.8
+  google_maps_cluster_manager: ^3.0.0+1
+  geolocator: ^13.0.1
+  google_place: ^0.4.7
+  google_api_headers: ^4.2.3
+  geocoding: ^3.0.0
+
+  # System
+  system_settings:
+    path: library/system_settings-master
+  package_info_plus: ^8.0.2
+  device_info_plus: ^10.1.2
+  stack_trace: ^1.10.0
+  flutter_fgbg: ^0.6.0
+
+  # Auth
+  flutter_appauth: ^7.0.0
+
+  # Firebase
+  firebase_core:
+  firebase_storage:
+  firebase_analytics:
+  firebase_crashlytics:
+  firebase_remote_config:
+  firebase_performance:
+  firebase_messaging:
+  firebase_auth:
+  cloud_firestore:
+  flutter_rating_bar:
+
+
+  cached_network_image:
+
+  image_picker:
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - environment/
+    - assets/
+
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/Rubik-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Rubik-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Rubik-Bold.ttf
+          weight: 700
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Italic.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+    - family: IBMPlexSans
+      fonts:
+        - asset: assets/fonts/IBMPlexSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexSans-Bold.ttf
+          weight: 700
+    - family: SegoeUI
+      fonts:
+        - asset: assets/fonts/SegoeUI-Regular.ttf
+          weight: 400
+
+flutter_intl:
+  enabled: true
+  main_locale: nl

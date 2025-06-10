@@ -1,0 +1,20 @@
+name: system_settings
+description: Flutter plugin to open system and app settings on iOS and Android.
+version: 2.1.0
+
+environment:
+  sdk: '>=3.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: de.florianweinaug.system_settings
+        pluginClass: SystemSettingsPlugin
+      ios:
+        pluginClass: SystemSettingsPlugin

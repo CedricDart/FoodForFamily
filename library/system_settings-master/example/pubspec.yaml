@@ -1,0 +1,18 @@
+name: system_settings_example
+description: Demonstrates how to use the system_settings plugin.
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  system_settings:
+    path: ../
+
+  cupertino_icons:
+
+flutter:
+  uses-material-design: true

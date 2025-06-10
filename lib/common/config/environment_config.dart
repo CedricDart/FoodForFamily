@@ -1,0 +1,1 @@
+enum EnvironmentConfig { str }
