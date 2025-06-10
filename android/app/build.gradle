@@ -35,7 +35,8 @@ if (flutterVersionName == null) {
 }
 
 android {
-    compileSdkVersion 34
+    namespace 'com.example.food_for_family' // Specify your application's namespace
+    compileSdkVersion 35
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -53,8 +54,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.food_for_family"
-        minSdkVersion 26
-        targetSdkVersion 34
+        minSdkVersion 29
+        targetSdkVersion 35
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
 
@@ -89,5 +90,5 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.1.0"
 }
