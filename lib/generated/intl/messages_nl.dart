@@ -22,59 +22,59 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "label_common_button_back_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_common_button_cancel": MessageLookupByLibrary.simpleMessage(""),
-        "label_common_internet_connection_error_body":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_common_internet_connection_error_title":
-            MessageLookupByLibrary.simpleMessage("no internet title"),
-        "label_general_api_exception_button_retry":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_general_api_exception_message":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_general_api_exception_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_action_privacy_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_action_terms_and_conditions_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_action_third_party_licenses_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_app_name": MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_app_published_address":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_app_published_by":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_screen_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_about_third_party_screen_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_help_action_call_text":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_help_action_contact_form_text":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_help_action_contact_form_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_help_action_faq_text":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_help_action_faq_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_help_screen_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_item_about_app_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_item_help_title": MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_item_settings_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_screen_title": MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_settings_language_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_settings_other_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_menu_settings_screen_title":
-            MessageLookupByLibrary.simpleMessage(""),
-        "label_onboarding_biometrics_permission_dialog_text":
-            MessageLookupByLibrary.simpleMessage("")
-      };
+    "label_common_button_back_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_common_button_cancel": MessageLookupByLibrary.simpleMessage(""),
+    "label_common_internet_connection_error_body":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_common_internet_connection_error_title":
+        MessageLookupByLibrary.simpleMessage("no internet title"),
+    "label_general_api_exception_button_retry":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_general_api_exception_message": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_general_api_exception_title": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_menu_about_action_privacy_title":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_about_action_terms_and_conditions_title":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_about_action_third_party_licenses_title":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_about_app_name": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_about_app_published_address":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_about_app_published_by": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_menu_about_screen_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_about_third_party_screen_title":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_help_action_call_text": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_menu_help_action_contact_form_text":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_help_action_contact_form_title":
+        MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_help_action_faq_text": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_help_action_faq_title": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_menu_help_screen_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_item_about_app_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_item_help_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_item_settings_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_screen_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_settings_language_title": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_menu_settings_other_title": MessageLookupByLibrary.simpleMessage(""),
+    "label_menu_settings_screen_title": MessageLookupByLibrary.simpleMessage(
+      "",
+    ),
+    "label_onboarding_biometrics_permission_dialog_text":
+        MessageLookupByLibrary.simpleMessage(""),
+  };
 }
